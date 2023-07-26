@@ -1,0 +1,1295 @@
+{
+	"info": {
+		"_postman_id": "ee3ae967-fbaf-41f7-b167-9a17b9d7a3e6",
+		"name": "proyecto_aplicaciones_distribuidas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27682272"
+	},
+	"item": [
+		{
+			"name": "api_matricula",
+			"item": [
+				{
+					"name": "agregar_tipo_asignatura",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"presencial\"\r\n\r\n\r\n        }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/tipoasignatura/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"tipoasignatura",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultar_tipo_asignatura",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"aplicaciones distribuidas\",\r\n    \"credito\": 2\r\n\r\n          \r\n            \r\n        }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/tipoasignatura/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"tipoasignatura",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultar_tipo_asignatura_por_id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"aplicaciones distribuidas\",\r\n    \"credito\": 2\r\n\r\n          \r\n            \r\n        }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/tipoasignatura/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"tipoasignatura",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar_tipo_asignatura",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"semipresencial\"\r\n\r\n          \r\n            \r\n        }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/tipoasignatura/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"tipoasignatura",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar_tipo_asignatura",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"aplicaciones distribuidas\",\r\n    \"credito\": 2\r\n\r\n          \r\n            \r\n        }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/tipoasignatura/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"tipoasignatura",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar_asignatura",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"aplicaciones distribuidas\",\r\n    \"credito\": 1,\r\n \"tipoasignatura\":{\r\n                        \"id\":1\r\n                }\r\n          \r\n            \r\n        }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/asignatura/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"asignatura",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultar_asignatura",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/asignatura/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"asignatura",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultar_asignatura_por_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/asignatura/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"asignatura",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar_asignatura",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1,\r\n    \"nombre\":\"programacion\",\r\n    \"credito\": 1,\r\n \"tipoasignatura\":{\r\n                        \"id\":1\r\n                }\r\n            \r\n        }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/asignatura/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"asignatura",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar_asignatura",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/asignatura/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"asignatura",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar_matricula",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"miguel\",\r\n    \"apellido\":\"martinez\",\r\n    \"cedula\":1758401747,\r\n    \"telefono\":\"0987876765\",\r\n    \"semestre\":\"Quinto\",\r\n\r\n            \"asignatura\":{\r\n                        \"id\":1\r\n                }\r\n            \r\n        }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/matricula/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"matricula",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultar_matricula",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/matricula/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"matricula",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultar_matricula_por_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/matricula/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"matricula",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar_matricula",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\":1,\r\n    \"nombre\":\"miguel\",\r\n    \"apellido\":\"martinez\",\r\n    \"cedula\":1758401747,\r\n    \"telefono\":\"0987876765\",\r\n    \"semestre\":\"Quinto\",\r\n\r\n            \"asignatura\":{\r\n                        \"id\":1\r\n                }\r\n            \r\n        }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/matricula/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"matricula",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar_matricula",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/matricula/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"matricula",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BFF",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "miguel",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultar_usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY5MDMzNjY5MSwicm9sIjoiUk9MRV9BRE1JTiJ9.GszDXrUKD4obT_idmDHclYbMm5Hfjr-8kvGR6Lmwa_kBPCBrd9llbQkg_wxdRqAwXoDboRQ5joxlcQDzpuLrpQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/user/2/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear_usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY5MDMyNzA2Niwicm9sIjoiUk9MRV9BRE1JTiJ9.46y26LV12pjynTZd-vi72N_ZAk5jfFbd1FueNit5b47H7kZUsJR1oSkImjfyy9MYLpH-pqBbRGzOZzPQAMIMkw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"password\": \"123\",\r\n    \"name\": \"Miguel\",\r\n  \"username\": \"miguel\",\r\n  \"looked\": false,\r\n  \"expired\": false,\r\n  \"enabled\": true,\r\n  \"roles\": [\r\n    {\r\n      \"id\": 2\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "otorgar_permisos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY5MDMyNzA2Niwicm9sIjoiUk9MRV9BRE1JTiJ9.46y26LV12pjynTZd-vi72N_ZAk5jfFbd1FueNit5b47H7kZUsJR1oSkImjfyy9MYLpH-pqBbRGzOZzPQAMIMkw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 2,\r\n    \"true\": 1,\r\n    \"name\": \"ROLE_ESTUDIANTE\",\r\n  \"authorities\": [\r\n\r\n    { \"id\": 20},\r\n    { \"id\": 21 },\r\n    { \"id\": 22 },\r\n    { \"id\": 23 },\r\n    { \"id\": 24 },\r\n    { \"id\": 25 },\r\n    { \"id\": 26},\r\n    { \"id\": 27 },\r\n    { \"id\": 28 },\r\n    { \"id\": 29 },\r\n    { \"id\": 30 },\r\n    { \"id\": 31 },\r\n    { \"id\": 32},\r\n    { \"id\": 33 },\r\n    { \"id\": 34 },\r\n    { \"id\": 35},\r\n    { \"id\": 36 },\r\n    { \"id\": 37 },\r\n    { \"id\": 38 },\r\n    { \"id\": 39 },\r\n    { \"id\": 40 },\r\n    { \"id\": 41 },\r\n    { \"id\": 42 },\r\n    { \"id\": 43 },\r\n    { \"id\": 44 },\r\n    { \"id\": 45 },\r\n    { \"id\": 46 },\r\n    { \"id\": 47 },\r\n    { \"id\": 48 },\r\n    { \"id\": 49 }\r\n\r\n  ]\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/role/2/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"role",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar_tipo_asignatura",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtaWd1ZWwiLCJleHAiOjE2OTAzMzY5MTcsInJvbCI6IlJPTEVfRVNUVURJQU5URSJ9.IyQ0E53YktfhzmSOVyCeled6kGkyXmJLyzXGOkhkqcu8bMl9fFmjIUozY0p0jYfrLJgAYmWVyQumm8764DRQGA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"presencial\"\r\n\r\n\r\n        }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/tipoasignatura/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"tipoasignatura",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultar_tipo_asignatura Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"aplicaciones distribuidas\",\r\n    \"credito\": 2\r\n\r\n          \r\n            \r\n        }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/tipoasignatura/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"tipoasignatura",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar_asignatura",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"aplicaciones distribuidas\",\r\n    \"credito\": 1,\r\n \"tipoasignatura\":{\r\n                        \"id\":1\r\n                }\r\n          \r\n            \r\n        }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/asignatura/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"asignatura",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultar_asignatura",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/asignatura/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"asignatura",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar_matricula",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"miguel\",\r\n    \"apellido\":\"martinez\",\r\n    \"cedula\":1758401747,\r\n    \"telefono\":\"0987876765\",\r\n    \"semestre\":\"Quinto\",\r\n\r\n            \"asignatura\":{\r\n                        \"id\":1\r\n                }\r\n            \r\n        }\r\n        ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/api/matricula/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"matricula",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultar_matricula",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/api/matricula/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"api",
+								"matricula",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "agregar_tipopersona",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"descripcion\":\"Soy una persona muy agradable y de confianza\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/tipopersona/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tipopersona",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ver_datos_tipopersona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/tipopersona/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tipopersona",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "guardar_persona",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"codigo\":\"BC212\",\r\n \"nombre\":\"Fernando\",\r\n \"nro_credito\":\"202345\",\r\n\r\n\r\n \"TipoPersona\":1\r\n        }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/persona/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"persona",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ver_datos_persona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/persona/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"persona",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "autentificacion",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "miguel",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultar_usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY5MDMzNjY5MSwicm9sIjoiUk9MRV9BRE1JTiJ9.GszDXrUKD4obT_idmDHclYbMm5Hfjr-8kvGR6Lmwa_kBPCBrd9llbQkg_wxdRqAwXoDboRQ5joxlcQDzpuLrpQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/user/2/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultar_permiso",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY5MDMyNzA2Niwicm9sIjoiUk9MRV9BRE1JTiJ9.46y26LV12pjynTZd-vi72N_ZAk5jfFbd1FueNit5b47H7kZUsJR1oSkImjfyy9MYLpH-pqBbRGzOZzPQAMIMkw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/authority/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"authority",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "crear_usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY5MDMyNzA2Niwicm9sIjoiUk9MRV9BRE1JTiJ9.46y26LV12pjynTZd-vi72N_ZAk5jfFbd1FueNit5b47H7kZUsJR1oSkImjfyy9MYLpH-pqBbRGzOZzPQAMIMkw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"password\": \"123\",\r\n    \"name\": \"Miguel\",\r\n  \"username\": \"miguel\",\r\n  \"looked\": false,\r\n  \"expired\": false,\r\n  \"enabled\": true,\r\n  \"roles\": [\r\n    {\r\n      \"id\": 2\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "otorgar_permisos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY5MDMyNzA2Niwicm9sIjoiUk9MRV9BRE1JTiJ9.46y26LV12pjynTZd-vi72N_ZAk5jfFbd1FueNit5b47H7kZUsJR1oSkImjfyy9MYLpH-pqBbRGzOZzPQAMIMkw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 2,\r\n    \"true\": 1,\r\n    \"name\": \"ROLE_ESTUDIANTE\",\r\n  \"authorities\": [\r\n\r\n    { \"id\": 20},\r\n    { \"id\": 21 },\r\n    { \"id\": 22 },\r\n    { \"id\": 23 },\r\n    { \"id\": 24 },\r\n    { \"id\": 25 },\r\n    { \"id\": 26},\r\n    { \"id\": 27 },\r\n    { \"id\": 28 },\r\n    { \"id\": 29 },\r\n    { \"id\": 30 },\r\n    { \"id\": 31 },\r\n    { \"id\": 32},\r\n    { \"id\": 33 },\r\n    { \"id\": 34 },\r\n    { \"id\": 35},\r\n    { \"id\": 36 },\r\n    { \"id\": 37 },\r\n    { \"id\": 38 },\r\n    { \"id\": 39 },\r\n    { \"id\": 40 },\r\n    { \"id\": 41 },\r\n    { \"id\": 42 },\r\n    { \"id\": 43 },\r\n    { \"id\": 44 },\r\n    { \"id\": 45 },\r\n    { \"id\": 46 },\r\n    { \"id\": 47 },\r\n    { \"id\": 48 },\r\n    { \"id\": 49 }\r\n\r\n  ]\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/role/2/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"role",
+								"2",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "api_persona",
+			"item": [
+				{
+					"name": "agregar_tipopersona",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Soy una persona muy agradable y de confianza\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/tipopersona/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tipopersona",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ver_datos_tipopersona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/tipopersona/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tipopersona",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultar_tipopersona_por_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/tipopersona/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tipopersona",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar_tipopersona",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"Soy una persona muy agradable\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/tipopersona/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tipopersona",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar_tipopersona",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/tipopersona/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tipopersona",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "guardar_persona",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"codigo\":\"BC212\",\r\n \"nombre\":\"Fernando\",\r\n \"nro_credito\":\"202345\",\r\n\r\n\r\n \"TipoPersona\":1\r\n        }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/persona/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"persona",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ver_datos_persona",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/persona/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"persona",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consultar_persona_por_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/persona/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"persona",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar_cliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n          \"id\":1,\r\n      \"codigo\":\"BC213\",\r\n \"nombre\":\"Fernando\",\r\n \"nro_credito\":\"202345\",\r\n \"TipoPersona\": 1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/persona/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"persona",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar_persona",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/persona/1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"persona",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

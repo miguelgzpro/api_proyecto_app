@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "86c38429-4f9d-4a5a-8d7b-c64e32b30f73",
+		"name": "tipopersonas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27682272"
+	},
+	"item": [
+		{
+			"name": "agregar_tipopersona",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descripcion\":\"Soy una persona muy agradable y de confianza\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/tipopersona/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tipopersona",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ver_datos_tipopersona",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/tipopersona/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tipopersona",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultar_tipopersona_por_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/tipopersona/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tipopersona",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar_tipopersona",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descripcion\":\"Soy una persona muy agradable y seria\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/tipopersona/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tipopersona",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar_tipopersona",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/tipopersona/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tipopersona",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "guardar_persona",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"nombre\":\"Fernando\",\r\n  \"apellido\":\"Martinez\",\r\n \"nro_identificacion\":\"1758401747\",\r\n  \"fecha_nacimiento\":\"2000-03-21\",\r\n \"etnia\":\"blanco\",\r\n \"genero\":\"masculino\",\r\n \"estado_civil\":\"soltero\",\r\n\r\n \"TipoPersona\":1\r\n        }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/persona/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"persona",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ver_datos_persona",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/persona/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"persona",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultar_persona_por_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/persona/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"persona",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar_cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"nombre\":\"Fernando\",\r\n  \"apellido\":\"Martinez\",\r\n \"nro_identificacion\":\"1758401748\",\r\n  \"fecha_nacimiento\":\"2000-03-21\",\r\n \"etnia\":\"blanco\",\r\n \"genero\":\"masculino\",\r\n \"estado_civil\":\"soltero\",\r\n\r\n \"tipopersona\":1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/persona/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"persona",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar_persona",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/persona/1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"persona",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
