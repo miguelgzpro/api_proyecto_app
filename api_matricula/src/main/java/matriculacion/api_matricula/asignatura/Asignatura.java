@@ -20,6 +20,6 @@ public class Asignatura {
     private Integer nro_credito;
 
  @ManyToOne
-    private TipoAsignatura tipoAsignatura;
+    private TipoAsignatura tipoasignatura;
 
 }

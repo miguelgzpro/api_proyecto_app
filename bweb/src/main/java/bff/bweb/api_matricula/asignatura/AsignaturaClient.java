@@ -1,4 +1,4 @@
-package bff.bweb.factura;
+package bff.bweb.api_matricula.asignatura;
 
 
 import java.util.List;
@@ -11,25 +11,25 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 
-@FeignClient(name = "bff.factura", url = "http://localhost:8083/api/factura")
-public interface FacturaClient {
+@FeignClient(name = "bff.asignatura", url = "http://localhost:8084/api/asignatura")
+public interface AsignaturaClient {
 
     @GetMapping("/{id}/")
-    FacturaDTO findFacturaById(@PathVariable("id") Long id);
+    AsignaturaDTO findRAsignaturaById(@PathVariable("id") Long id);
 
     @GetMapping("/pdf/{id}/")
     ResponseEntity<byte[]> pdfById( @PathVariable("id") Long id);
 
     @GetMapping("/")
-    List<FacturaDTO> findAll();
+    List<AsignaturaDTO> findAll();
 
     @PostMapping("/") 
-    FacturaDTO save(FacturaDTO entity);
+    AsignaturaDTO save(AsignaturaDTO entity);
 
     @DeleteMapping("/{id}/")
     void deleteById(@PathVariable("id")  Long id);
 
     @PutMapping("/{id}/")
-    FacturaDTO update(@PathVariable("id")  Long id, FacturaDTO entity);
+    AsignaturaDTO update(@PathVariable("id")  Long id, AsignaturaDTO entity);
 
 }

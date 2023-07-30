@@ -1,4 +1,4 @@
-package bff.bweb.factura;
+package bff.bweb.api_matricula.tipoAsignatura;
 
 
 import java.lang.reflect.Field;
@@ -21,20 +21,20 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 
 @RestController
-@RequestMapping("api/factura")
+@RequestMapping("api/tipoasignatura")
 @CrossOrigin({"*"})
-public class FacturaController {
+public class TipoAsignaturaController {
 
-    @Autowired FacturaClient client;
+    @Autowired TipoAsignaturaClient client;
 
     @GetMapping("/")
-    public List<FacturaDTO> findAll() {
+    public List<TipoAsignaturaDTO> findAll() {
         return client.findAll();
     }
     
     @GetMapping("/{id}/")
-    public FacturaDTO findById(@PathVariable Long id){
-        return client.findFacturaById(id);
+    public TipoAsignaturaDTO findById(@PathVariable Long id){
+        return client.findRipoAsignaturaById(id);
     }
 
     @GetMapping("/pdf/{id}/")
@@ -43,7 +43,7 @@ public class FacturaController {
     }
 
     @PostMapping("/")
-    public FacturaDTO save(@RequestBody FacturaDTO entity){
+    public TipoAsignaturaDTO save(@RequestBody TipoAsignaturaDTO entity){
         return client.save(entity);
     }
 
@@ -53,14 +53,14 @@ public class FacturaController {
     }
 
     @PutMapping("/{id}/")
-    public FacturaDTO update(@PathVariable Long id, @RequestBody FacturaDTO entity){
+    public TipoAsignaturaDTO update(@PathVariable Long id, @RequestBody TipoAsignaturaDTO entity){
         return client.update( id, entity);
     }
     
     @PatchMapping("/{id}/")
-    public FacturaDTO partialUpdate(@PathVariable Long id, @RequestBody Map<String, Object> fields){
+    public TipoAsignaturaDTO partialUpdate(@PathVariable Long id, @RequestBody Map<String, Object> fields){
 
-        FacturaDTO FacturaDTO = client.findFacturaById( id);
+        TipoAsignaturaDTO TipoAsignaturaDTO = client.findRipoAsignaturaById( id);
 
         // itera sobre los campos que se desean actualizar
         for (Map.Entry<String, Object> field : fields.entrySet()) {
@@ -69,13 +69,13 @@ public class FacturaController {
             
             // utiliza reflection para establecer el valor del campo en la entidad
             try {
-                Field campoEntidad = FacturaDTO.class.getDeclaredField(fieldName);
+                Field campoEntidad = TipoAsignaturaDTO.class.getDeclaredField(fieldName);
                 campoEntidad.setAccessible(true);
-                campoEntidad.set(FacturaDTO, fieldValue);
+                campoEntidad.set(TipoAsignaturaDTO, fieldValue);
             } catch (NoSuchFieldException | IllegalAccessException ex) {
                 // maneja la excepción si ocurre algún error al acceder al campo
             }
         }
-        return client.update( id, FacturaDTO);
+        return client.update( id, TipoAsignaturaDTO);
     }
 }
