@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import bff.bweb.api_persona.persona.PersonaDTO;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -69,7 +71,7 @@ public class TipoPersonaController {
             
             // utiliza reflection para establecer el valor del campo en la entidad
             try {
-                Field campoEntidad = TipoPersonaDTO.class.getDeclaredField(fieldName);
+                Field campoEntidad = PersonaDTO.class.getDeclaredField(fieldName);
                 campoEntidad.setAccessible(true);
                 campoEntidad.set(TipoPersonaDTO, fieldValue);
             } catch (NoSuchFieldException | IllegalAccessException ex) {
